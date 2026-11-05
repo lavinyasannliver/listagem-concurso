@@ -1,52 +1,112 @@
-# Classificações — Tombos/MG (2026)
+ <div align="center">
 
-Projeto de consulta das classificações por cargo do Concurso Público (Edital nº 01/2026) e do Processo Seletivo Público (Edital nº 02/2026).
+# 📊 Classificações de Tombos — MG
 
-## Estrutura
+### Consulta de candidatos por cargo | Concurso Público e Processo Seletivo — 2026
+
+Uma página web simples e organizada para consultar as listas de classificação dos processos seletivos do município de **Tombos, Minas Gerais**.
+
+</div>
+
+---
+
+## ✨ Sobre o projeto
+
+O **Classificações de Tombos** foi desenvolvido para facilitar a consulta dos resultados publicados para o Concurso Público e para o Processo Seletivo Público de 2026.
+
+Em vez de procurar manualmente em documentos extensos, a pessoa usuária pode acessar a página correspondente e visualizar os candidatos organizados por cargo.
+
+O projeto reúne duas áreas de consulta:
+
+- **Concurso Público — Edital nº 01/2026**
+- **Processo Seletivo Público — Edital nº 02/2026**
+
+> **Importante:** esta ferramenta é de caráter informativo. Confira sempre os editais, retificações e publicações oficiais. A classificação exibida pode ser preliminar e não representa, por si só, uma confirmação oficial de convocação ou nomeação.
+
+## 🧭 Funcionalidades
+
+- Consulta separada entre concurso e processo seletivo.
+- Seleção de cargo para visualizar a lista correspondente.
+- Pesquisa de candidatos para facilitar a localização de nomes.
+- Exibição dos dados em tabela organizada.
+- Dados armazenados em arquivos CSV, facilitando futuras atualizações.
+- Interface web acessível pelo navegador.
+
+## 🖥️ Como executar localmente
+
+Como as páginas carregam os dados dos arquivos CSV, é necessário abrir o projeto por meio de um servidor local — não diretamente pelo caminho `file://`.
+
+1. Baixe ou clone este repositório.
+2. Abra a pasta do projeto no **Visual Studio Code**.
+3. Instale a extensão **Live Server**, caso ainda não esteja instalada.
+4. Abra o arquivo `index.html` que fica na raiz do projeto.
+5. Clique com o botão direito e selecione **Open with Live Server**.
+6. Na página inicial, escolha **Concurso Público** ou **Processo Seletivo**.
+
+## 📁 Organização dos arquivos
 
 ```text
 Projeto_Classificacao_Tombos/
-├── index.html                         # Página inicial
+├── index.html
 ├── README.md
 ├── concurso/
-│   ├── index.html                     # Estrutura da página
-│   ├── style.css                      # Estilos (visual preservado)
-│   ├── script.js                      # Filtro e renderização
-│   └── dados/candidatos.csv            # Dados usados na consulta
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── dados/
+│       └── candidatos.csv
 ├── processo-seletivo/
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
-│   └── dados/candidatos.csv
+│   └── dados/
+│       └── candidatos.csv
 └── documentos/
-    ├── editais/                       # Editais retificados
-    └── resultados/                    # Resultados e CSV de referência
+    ├── editais/
+    └── resultados/
 ```
 
-## Como executar no VS Code
+## 🛠️ Tecnologias utilizadas
 
-1. Extraia ou abra a pasta do projeto no VS Code.
-2. Instale a extensão **Live Server** (Ritwick Dey), caso ainda não tenha.
-3. Clique com o botão direito em `index.html` e selecione **Open with Live Server**.
-4. Escolha Concurso Público ou Processo Seletivo na página inicial.
+- **HTML5** — estrutura das páginas.
+- **CSS3** — identidade visual e layout responsivo.
+- **JavaScript** — interação, filtros e carregamento dos dados.
+- **CSV** — armazenamento dos registros de candidatos.
 
-O sistema carrega os dados CSV via `fetch`. Por segurança do navegador, a consulta de CSV pode não funcionar ao abrir o HTML diretamente com `file://`; use Live Server ou outro servidor local.
+O projeto foi construído sem frameworks, utilizando tecnologias web básicas.
 
-## Publicação no GitHub Pages
+## 🔄 Como atualizar os dados
 
-Envie a pasta para um repositório GitHub. Em **Settings → Pages**, escolha a branch e a pasta raiz (`/`) como origem. O arquivo `index.html` da raiz será a página inicial. Os caminhos são relativos e funcionam no GitHub Pages.
+1. Abra o arquivo `candidatos.csv` da área que deseja atualizar.
+2. Edite ou acrescente os registros mantendo o formato e os cabeçalhos existentes.
+3. Salve o arquivo e atualize a página no navegador.
 
-## Dados e critérios
+Para personalizar a aparência, altere o `style.css` da pasta correspondente. Para ajustar os filtros ou a forma de exibição, edite o `script.js`.
 
-Os CSVs de cada interface são os dados incorporados às duas páginas HTML aprovadas para esta versão, extraídos para arquivos separados para facilitar manutenção. Os PDFs de referência estão em `documentos/`. As classificações são informativas e provisórias; não substituem publicações oficiais. Critérios que dependem de comprovação ou etapas posteriores podem alterar a ordem.
+## 🌐 Publicação no GitHub Pages
 
-## Manutenção
+É possível publicar o projeto como um site estático:
 
-- Para corrigir ou atualizar registros, edite o CSV correspondente.
-- Para alterar cores, espaçamento ou tipografia, edite o `style.css` da respectiva pasta.
-- Para alterar pesquisa, seleção de cargo ou apresentação dos dados, edite o `script.js`.
-- Mantenha os cabeçalhos do CSV consistentes com os campos usados no JavaScript.
+1. Envie os arquivos para um repositório no GitHub.
+2. Acesse **Settings → Pages**.
+3. Em *Build and deployment*, selecione a branch desejada e a pasta raiz (`/`).
+4. Salve e aguarde a publicação do site.
 
-## Tecnologias
+A página `index.html` da raiz funciona como entrada para as duas áreas de consulta.
 
-HTML5, CSS3, JavaScript (sem bibliotecas externas) e CSV.
+## 👩‍💻 Autoria
+
+<div align="center">
+
+**Lavinya Sannliver**  
+Criadora do projeto
+
+</div>
+
+---
+
+<div align="center">
+
+Feito para tornar a consulta das classificações mais prática e organizada.
+
+</div>
