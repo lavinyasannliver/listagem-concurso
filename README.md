@@ -83,30 +83,15 @@ O projeto foi construído sem frameworks, utilizando tecnologias web básicas.
 
 Para personalizar a aparência, altere o `style.css` da pasta correspondente. Para ajustar os filtros ou a forma de exibição, edite o `script.js`.
 
-## 🌐 Publicação no GitHub Pages
 
-É possível publicar o projeto como um site estático:
 
-1. Envie os arquivos para um repositório no GitHub.
-2. Acesse **Settings → Pages**.
-3. Em *Build and deployment*, selecione a branch desejada e a pasta raiz (`/`).
-4. Salve e aguarde a publicação do site.
+## Manutenção
 
-A página `index.html` da raiz funciona como entrada para as duas áreas de consulta.
+- Para corrigir ou atualizar registros, edite o CSV correspondente.
+- Para alterar cores, espaçamento ou tipografia, edite o `style.css` da respectiva pasta.
+- Para alterar pesquisa, seleção de cargo ou apresentação dos dados, edite o `script.js`.
+- Mantenha os cabeçalhos do CSV consistentes com os campos usados no JavaScript.
 
-## 👩‍💻 Autoria
+## Tecnologias
 
-<div align="center">
-
-**Lavinya Sannliver**  
-Criadora do projeto
-
-</div>
-
----
-
-<div align="center">
-
-Feito para tornar a consulta das classificações mais prática e organizada.
-
-</div>
+HTML5, CSS3, JavaScript (sem bibliotecas externas) e CSV.
