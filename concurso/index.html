@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consulta de classificação provisória dos cargos de Tombos, Minas Gerais.">
+  <title>Concurso Público — Todos os cargos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <p>Edital nº 01/2026 • Resultado da prova objetiva</p>
+    <h1>Concurso Público — Todos os cargos</h1>
+    <p>Consulta de classificação provisória por cargo • Tombos/MG • 2026</p>
+  </header>
+
+  <main>
+    <section class="panel" aria-label="Filtros e resumo">
+      <div class="toolbar">
+        <div>
+          <label for="cargo">Escolha o cargo</label>
+          <select id="cargo" aria-label="Escolha o cargo"></select>
+        </div>
+        <div>
+          <label for="q">Pesquisar candidato ou inscrição</label>
+          <input id="q" type="search" placeholder="Digite nome ou inscrição" autocomplete="off">
+        </div>
+      </div>
+
+      <div class="summary" aria-live="polite">
+        <div class="stat"><b id="count">—</b><span>Registros no cargo</span></div>
+        <div class="stat"><b id="active">—</b><span>Com nota</span></div>
+        <div class="stat"><b id="absent">—</b><span>Ausentes</span></div>
+        <div class="stat"><b id="shown">—</b><span>Exibidos na busca</span></div>
+      </div>
+      <p class="hint">Desempate por pontuação total, prioridade legal de 60 anos ou mais, Específicos (quando houver), Português, Legislação Municipal, Conhecimentos Gerais e idade. A função de jurado não está informada. Para cargos com etapas posteriores, a classificação pode ser alterada.</p>
+    </section>
+
+    <section class="panel" aria-label="Classificação">
+      <h2 id="title">Selecione um cargo</h2>
+      <div class="tablewrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Pos.</th>
+              <th scope="col">Candidato</th>
+              <th scope="col">Inscrição</th>
+              <th scope="col">Nascimento</th>
+              <th scope="col">Português</th>
+              <th scope="col">Leg. municipal</th>
+              <th scope="col">Gerais</th>
+              <th scope="col">Específicos</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"><tr><td colspan="9">Carregando dados...</td></tr></tbody>
+        </table>
+      </div>
+      <p class="footer">Classificação informativa e provisória. A função de jurado, comprovações e decisões posteriores da banca podem alterar a ordem. Consulte os editais e publicações oficiais.</p>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
